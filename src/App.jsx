@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import { Routes, Route, useLocation, Link } from 'react-router-dom'
+import { Routes, Route, useLocation } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 import HomeScreen from './components/screens/HomeScreen'
-import DashboardScreen from './components/screens/DashboardScreen'
-import StoreScreen from './components/screens/StoreScreen'
+import ControlsScreen from './components/screens/ControlsScreen'
+import SafetyScreen from './components/screens/SafetyScreen'
 import ProfileScreen from './components/screens/ProfileScreen'
 import BottomNav from './components/BottomNav'
 import './index.css'
@@ -70,18 +70,18 @@ function App() {
             }
           />
           <Route
-            path="/dashboard"
+            path="/controls"
             element={
               <PageWrapper>
-                <DashboardScreen />
+                <ControlsScreen />
               </PageWrapper>
             }
           />
           <Route
-            path="/store"
+            path="/safety"
             element={
               <PageWrapper>
-                <StoreScreen />
+                <SafetyScreen />
               </PageWrapper>
             }
           />
